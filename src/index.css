@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:wght@400;500&display=swap');
+*{margin: 0;padding: 0;font-family: "Outfit",'sans-serif';}
+html{font-size: 15px;}
+.App{
+    width: 100vw;
+    height: 100dvh;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .app-inner-frame{
+    max-width: 600px;
+    width: 92%;
+    height: 95%;
+    box-sizing: border-box;
+    max-height: 680px;
+    border: transparent;
+    border-radius: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    background-color: rgba(231, 231, 231, 0.05);
+
+}
+.loader {display: flex;justify-content: center;align-items: center;margin: 70px 0px;}
+.loader2 {display: none;}
+.circle {
+    width: 10px;
+    height: 10px;
+    background-color: #333;
+    border-radius: 50%;
+    margin: 0 5px;
+    animation: scaleFade 1.5s infinite ease-in-out;
+}
+  .circle:nth-child(1) {animation-delay: 0s;}
+  .circle:nth-child(2) {animation-delay: 0.3s;}
+  .circle:nth-child(3) {animation-delay: 0.6s;}
+  .Loading{
+    background: linear-gradient(to bottom right, #677ddd, #bbd8ff);
+  }
+  @keyframes scaleFade {0%, 100% {opacity: 0.3;transform: scale(0.6);}50% { opacity: 1;transform: scale(1.2);}}
+  @media only screen and (min-width:800px) {
+    .loader {margin: 110px 0px; }
+    .loader2 {display: flex;justify-content: center;align-items: center;margin: 65px 0px;}
+  }
+@media only screen and (min-width:800px) {
+  .app-inner-frame{
+      max-width: 900px;
+      max-height: 550px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: row;
+      gap: 10px;
+      padding: 20px 10px;
+  }
+}
