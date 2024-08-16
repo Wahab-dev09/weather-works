@@ -43,6 +43,29 @@ html{font-size: 15px;}
   .Loading{
     background: linear-gradient(to bottom right, #677ddd, #bbd8ff);
   }
+  .err{
+    width: 90%;
+    max-width: 500px;
+    display: flex;
+    box-sizing: border-box;
+    padding-right: 50px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+    color: white;
+    position: relative;
+  }
+  .err>p{color: rgba(255, 255, 255, 0.96);}
+  .err>button{
+    font-size: 1rem;
+    padding: 0.4em 1em;
+    border: transparent;
+    cursor: pointer;
+    border-radius: 7px;
+    color: white;
+    background-color: #3b5783;
+  }
   @keyframes scaleFade {0%, 100% {opacity: 0.3;transform: scale(0.6);}50% { opacity: 1;transform: scale(1.2);}}
   @media only screen and (min-width:800px) {
     .loader {margin: 110px 0px; }
