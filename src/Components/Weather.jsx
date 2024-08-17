@@ -65,7 +65,7 @@ const Weather = () => {
         return {
           backgroundImage: `${import.meta.env.BASE_URL}partlycloudy.webp`,
           imagePosition: { top: '-38px', left: '-17px', transform: 'rotateY(180deg)', width: '120px' },
-          background : 'linear-gradient(to bottom right, #93a6ff,#fadab1)',
+          background : 'linear-gradient(to bottom right, #93a6ff,#fdca87)',
           main: ['#1a1a1a','#242424','#313131']
         };
       case 'rain':case 'light drizzle':case 'patchy light rain with thunder':case 'moderate or heavy rain shower':case 'moderate or heavy rain with thunder':
