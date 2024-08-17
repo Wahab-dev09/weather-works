@@ -65,28 +65,28 @@ const Weather = () => {
         return {
           backgroundImage: `${import.meta.env.BASE_URL}partlycloudy.webp`,
           imagePosition: { top: '-38px', left: '-17px', transform: 'rotateY(180deg)', width: '120px' },
-          background : 'linear-gradient(to bottom right, #677ddd, #bbd8ff)',
+          background : 'linear-gradient(to bottom right, #93a6ff,#fadab1)',
           main: ['#1a1a1a','#242424','#313131']
         };
       case 'rain':case 'light drizzle':case 'patchy light rain with thunder':case 'moderate or heavy rain shower':case 'moderate or heavy rain with thunder':
         return {
           backgroundImage: `${import.meta.env.BASE_URL}rain.webp`,
           imagePosition: { top: '-45px', right: '-17px', width: '120px' },
-          background : 'linear-gradient(to bottom right, #677ddd, #bbd8ff)',
+          background : 'linear-gradient(to bottom right, #93a6ff, #5688ca)',
           main: ['#1a1a1a','#242424','#313131']
         };
       case 'light rain':case 'patchy light rain':case 'light rain shower':case 'moderate rain':case 'patchy rain nearby':case 'moderate rain at times':
         return {
           backgroundImage: `${import.meta.env.BASE_URL}lightrain.webp`,
           imagePosition: { top: '-50px', right: '-20px', width: '120px' },
-          background : 'linear-gradient(to bottom right, #677ddd, #bbd8ff)',
+          background : 'linear-gradient(to bottom right, #88c7fa, #8f9ef1)',
           main: ['#1a1a1a','#242424','#313131']
         };
       case 'clear':
         return {
           backgroundImage: '',
           imagePosition: '',
-          background : 'linear-gradient(to bottom right, #677ddd, #bbd8ff)',
+          background : 'linear-gradient(to bottom right, #677ddd,#bbfff9)',
           main: ['#1a1a1a','#242424','#313131']
         };
       case 'mist':case 'fog':case 'freezing fog':case 'cloudy':
