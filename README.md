@@ -1,9 +1,9 @@
 # Weather App
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/2d7679f3-98f2-4416-a72e-bd70def3025c" alt="Weather Screenshot 2" width="33%" />
-  <img src="https://github.com/user-attachments/assets/b17068b7-e1f2-443a-a562-bc29c6231b0a" alt="Weather Screenshot 3" width="33%" />
-  <img src="https://github.com/user-attachments/assets/7f8e4eb7-e2b7-42c3-bc09-1841157cecf5" alt="Weather Screenshot 4" width="33%" />
+  <img src="https://github.com/user-attachments/assets/2d7679f3-98f2-4416-a72e-bd70def3025c" alt="Weather Screenshot 2" width="32%" />
+  <img src="https://github.com/user-attachments/assets/b17068b7-e1f2-443a-a562-bc29c6231b0a" alt="Weather Screenshot 3" width="32%" />
+  <img src="https://github.com/user-attachments/assets/7f8e4eb7-e2b7-42c3-bc09-1841157cecf5" alt="Weather Screenshot 4" width="32%" />
 </p>
 
 ## Overview
