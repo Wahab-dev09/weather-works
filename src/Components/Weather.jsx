@@ -4,12 +4,14 @@ import { useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
+
 const Weather = () => {
   const [weatherData, setWeatherData] = useState(null);
   const [error, setError] = useState({});
   const [location, setLocation] = useState("");
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
+  
 
   const HandleSubmit = async (e) => {
     e.preventDefault();
@@ -32,17 +34,17 @@ const Weather = () => {
       fetchWeather(location);
     }
   }, [location]);
+  const apiKey = import.meta.env.VITE_WEATHER_API_KEY;
   const fetchWeather = async (location) => {
     try {
       const response = await fetch(
-        `https://api.weatherapi.com/v1/forecast.json?key=6ecdfacf6f354d8297f65932241203&q=${location}&days=3&aqi=no&alerts=no`
+        `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${location}&days=3&aqi=no&alerts=no`
       );
       setLoading(true);
       if (!response.ok) {
         throw new Error("Network response was not ok");
       }
       const weatherObj = await response.json();
-      console.log(weatherObj);
       setWeatherData(weatherObj);
     } catch (error) {
       console.error("Fetch weather data failed:", error);
